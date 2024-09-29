@@ -13,11 +13,8 @@ import PencilKit
 struct DrawingCanvasView: UIViewControllerRepresentable {
     @Environment(\.managedObjectContext) private var viewContext
     
-    func updateUIViewController(_ uiViewController: DrawingCanvasViewContoller, context: Context) {
-        uiViewController.drawingData = data
-    }
-    
     typealias UIViewControllerType = DrawingCanvasViewContoller
+
     
     var data:Data
     var id: UUID
@@ -26,6 +23,7 @@ struct DrawingCanvasView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> DrawingCanvasViewContoller {
         let viewController = DrawingCanvasViewContoller()
         viewController.drawingData = data
+//        viewController.view.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
         // 呼ばれるタイミングはcanvasViewDrawingDidChange()
         // 描画、　一旦描画が終えた = 画面からpenを離したタイミングで
         viewController.drawingChanged = { data in
@@ -46,6 +44,11 @@ struct DrawingCanvasView: UIViewControllerRepresentable {
             }
         }
         return viewController
+    }
+    
+    func updateUIViewController(_ uiViewController: DrawingCanvasViewContoller, context: Context) {
+        uiViewController.drawingData = data
+//        uiViewController.view.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
     }
 }
 

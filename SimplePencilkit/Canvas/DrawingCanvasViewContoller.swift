@@ -9,11 +9,13 @@ import SwiftUI
 import PencilKit
 
 class DrawingCanvasViewContoller: UIViewController {
+    // canvas view の初期化子
     lazy var canvas: PKCanvasView = {
         let view = PKCanvasView()
+        view.contentSize = CGSize(width: 1000, height: 1500)
         view.drawingPolicy = .anyInput
-        view.minimumZoomScale = 1
-        view.maximumZoomScale = 1
+        view.minimumZoomScale = 0.2
+        view.maximumZoomScale = 4.0
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -31,6 +33,7 @@ class DrawingCanvasViewContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(canvas)
+        
         // 描画範囲の四隅？
         NSLayoutConstraint.activate([canvas.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                                      canvas.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -46,6 +49,8 @@ class DrawingCanvasViewContoller: UIViewController {
     }
 }
 
+
+
 extension DrawingCanvasViewContoller: PKToolPickerObserver, PKCanvasViewDelegate {
     /// Called after the drawing on the canvas did change.
     ///
@@ -57,7 +62,11 @@ extension DrawingCanvasViewContoller: PKToolPickerObserver, PKCanvasViewDelegate
     ///
     /// It is also possible that this method is not called, if the drawing interaction is cancelled.
     func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
-        debugPrint("canvasViewDrawingDidChange() called")
+        debugPrint("cvDrawingDidChange() called")
         drawingChanged(canvasView.drawing.dataRepresentation())
+    }
+    
+    func canvasViewDidFinishRendering(_ canvasView: PKCanvasView) {
+        debugPrint("cvDidFinishingRendering() called")
     }
 }
