@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E5E4AD82CA8D79F0082DEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5E4ACF2CA8D79F0082DEFB /* Assets.xcassets */; };
+		1E5E4AD92CA8D79F0082DEFB /* AddNewCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4ACE2CA8D79F0082DEFB /* AddNewCanvasView.swift */; };
+		1E5E4ADA2CA8D79F0082DEFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AD02CA8D79F0082DEFB /* ContentView.swift */; };
+		1E5E4ADB2CA8D79F0082DEFB /* DrawingCanvasViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AD12CA8D79F0082DEFB /* DrawingCanvasViewContoller.swift */; };
+		1E5E4ADC2CA8D79F0082DEFB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AD22CA8D79F0082DEFB /* PersistenceController.swift */; };
+		1E5E4ADD2CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AD32CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodeld */; };
+		1E5E4ADE2CA8D79F0082DEFB /* SimplePencilkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AD42CA8D79F0082DEFB /* SimplePencilkitApp.swift */; };
+		1E5E4AE12CA8D7E60082DEFB /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AE02CA8D7E60082DEFB /* DrawingCanvasView.swift */; };
+		1E5E4AE32CA8E4EE0082DEFB /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E4AE22CA8E4EE0082DEFB /* DrawingView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1E5E4A942CA7A55A0082DEFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +39,19 @@
 		1E5E4A832CA7A5580082DEFB /* SimplePencilkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePencilkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5E4A932CA7A55A0082DEFB /* SimplePencilkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePencilkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5E4A9D2CA7A55A0082DEFB /* SimplePencilkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePencilkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5E4ACE2CA8D79F0082DEFB /* AddNewCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCanvasView.swift; sourceTree = "<group>"; };
+		1E5E4ACF2CA8D79F0082DEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E5E4AD02CA8D79F0082DEFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E5E4AD12CA8D79F0082DEFB /* DrawingCanvasViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasViewContoller.swift; sourceTree = "<group>"; };
+		1E5E4AD22CA8D79F0082DEFB /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		1E5E4AD42CA8D79F0082DEFB /* SimplePencilkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePencilkitApp.swift; sourceTree = "<group>"; };
+		1E5E4AD62CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simple_Pencilkit.xcdatamodel; sourceTree = "<group>"; };
+		1E5E4AD72CA8D79F0082DEFB /* Simple_Pencilkit 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Simple_Pencilkit 2.xcdatamodel"; sourceTree = "<group>"; };
+		1E5E4AE02CA8D7E60082DEFB /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		1E5E4AE22CA8E4EE0082DEFB /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1E5E4A852CA7A5580082DEFB /* SimplePencilkit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SimplePencilkit;
-			sourceTree = "<group>";
-		};
 		1E5E4A962CA7A55A0082DEFB /* SimplePencilkitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SimplePencilkitTests;
@@ -75,7 +92,7 @@
 		1E5E4A7A2CA7A5580082DEFB = {
 			isa = PBXGroup;
 			children = (
-				1E5E4A852CA7A5580082DEFB /* SimplePencilkit */,
+				1E5E4AD52CA8D79F0082DEFB /* SimplePencilkit */,
 				1E5E4A962CA7A55A0082DEFB /* SimplePencilkitTests */,
 				1E5E4AA02CA7A55A0082DEFB /* SimplePencilkitUITests */,
 				1E5E4A842CA7A5580082DEFB /* Products */,
@@ -92,6 +109,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1E5E4AD52CA8D79F0082DEFB /* SimplePencilkit */ = {
+			isa = PBXGroup;
+			children = (
+				1E5E4AE52CA8EADD0082DEFB /* Resources */,
+				1E5E4ADF2CA8D7A90082DEFB /* Canvas */,
+				1E5E4AD32CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodeld */,
+				1E5E4AD02CA8D79F0082DEFB /* ContentView.swift */,
+				1E5E4AD22CA8D79F0082DEFB /* PersistenceController.swift */,
+				1E5E4AD42CA8D79F0082DEFB /* SimplePencilkitApp.swift */,
+			);
+			path = SimplePencilkit;
+			sourceTree = "<group>";
+		};
+		1E5E4ADF2CA8D7A90082DEFB /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				1E5E4AD12CA8D79F0082DEFB /* DrawingCanvasViewContoller.swift */,
+				1E5E4ACE2CA8D79F0082DEFB /* AddNewCanvasView.swift */,
+				1E5E4AE02CA8D7E60082DEFB /* DrawingCanvasView.swift */,
+				1E5E4AE22CA8E4EE0082DEFB /* DrawingView.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		1E5E4AE42CA8EAD20082DEFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E5E4AE52CA8EADD0082DEFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E5E4AE42CA8EAD20082DEFB /* Preview Content */,
+				1E5E4ACF2CA8D79F0082DEFB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +163,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1E5E4A852CA7A5580082DEFB /* SimplePencilkit */,
 			);
 			name = SimplePencilkit;
 			packageProductDependencies = (
@@ -212,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5E4AD82CA8D79F0082DEFB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5E4AD92CA8D79F0082DEFB /* AddNewCanvasView.swift in Sources */,
+				1E5E4ADA2CA8D79F0082DEFB /* ContentView.swift in Sources */,
+				1E5E4ADB2CA8D79F0082DEFB /* DrawingCanvasViewContoller.swift in Sources */,
+				1E5E4AE32CA8E4EE0082DEFB /* DrawingView.swift in Sources */,
+				1E5E4ADC2CA8D79F0082DEFB /* PersistenceController.swift in Sources */,
+				1E5E4ADD2CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodeld in Sources */,
+				1E5E4ADE2CA8D79F0082DEFB /* SimplePencilkitApp.swift in Sources */,
+				1E5E4AE12CA8D7E60082DEFB /* DrawingCanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +458,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimplePencilkit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimplePencilkit/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -423,7 +486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimplePencilkit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimplePencilkit/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -552,6 +615,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E5E4AD32CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E5E4AD62CA8D79F0082DEFB /* Simple_Pencilkit.xcdatamodel */,
+				1E5E4AD72CA8D79F0082DEFB /* Simple_Pencilkit 2.xcdatamodel */,
+			);
+			currentVersion = 1E5E4AD72CA8D79F0082DEFB /* Simple_Pencilkit 2.xcdatamodel */;
+			path = Simple_Pencilkit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1E5E4A7B2CA7A5580082DEFB /* Project object */;
 }
